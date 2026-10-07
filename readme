@@ -1,0 +1,35 @@
+#  Sistema Simples de Gerenciamento de Cache em Java
+
+Um projeto simples em Java que simula o funcionamento de um **mecanismo de Cache** em memória, utilizando a estratégia **FIFO** (*First In, First Out* — o primeiro que entra é o primeiro que sai).
+
+---
+
+##  Funcionalidades
+
+- **Busca Eficiente (Hit/Miss):**
+  - Tenta localizar a pessoa no **Cache**.
+  - Caso não encontre (Cache Miss), realiza a busca no **Banco de Dados**.
+- **Adição Automática ao Cache:**
+  - Quando um registro é encontrado no banco, ele é armazenado no cache para acessos futuros mais rápidos.
+- **Gerenciamento de Limite (Politica FIFO):**
+  - O cache tem um limite configurado de **10 itens**.
+  - Ao atingir a capacidade máxima, a pessoa mais antiga do cache é removida para dar lugar à nova consulta.
+- **Interface Interativa via Terminal:**
+  - Permite realizar múltiplas buscas através de um laço `do-while`.
+  - Exibe o estado atualizado do cache a cada consulta efetuada.
+
+---
+
+##  Tecnologias Utilizadas
+
+- **Linguagem:** Java (JDK 8 ou superior)
+- **Estruturas de Dados:** `ArrayList` (`java.util.List`)
+- **Entrada de Dados:** `Scanner` (`java.util.Scanner`)
+
+---
+
+##  Como Executar
+
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/kauaLuck/Sistema_Simples.git](https://github.com/kauaLuck/Sistema_Simples.git)
